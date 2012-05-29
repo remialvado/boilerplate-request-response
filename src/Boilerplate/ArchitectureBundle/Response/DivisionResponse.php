@@ -11,9 +11,9 @@ class DivisionResponse
 {
     protected $quotient;
     
-    public function fetchData(DivisionRequest $request)
+    public function fetchData($dividend, $divisor)
     {
-        $this->setQuotient($request->getDividend() / $request->getDivisor());
+        $this->setQuotient($dividend / $divisor);
     }
     
     public function getParametersForTemplate() 

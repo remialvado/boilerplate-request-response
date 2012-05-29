@@ -25,7 +25,7 @@ class DivisionController extends Controller
             return new Response($e->getMessage(), 400);
         }
         $divisionResponse = $this->getDivisionResponse();
-        $divisionResponse->fetchData($divisionRequest);
+        $divisionResponse->fetchData($divisionRequest->getDividend(), $divisionRequest->getDivisor());
         return $divisionResponse->getParametersForTemplate();
     }
     
