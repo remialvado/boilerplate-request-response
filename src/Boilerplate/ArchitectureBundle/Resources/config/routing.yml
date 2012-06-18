@@ -1,3 +1,11 @@
-BoilerplateArchitectureBundle_homepage:
+BoilerplateArchitectureBundle_division:
     pattern:  /division/{a}/{b}
     defaults: { _controller: BoilerplateArchitectureBundle:Division:index }
+    
+BoilerplateArchitectureBundle_users_request:
+    pattern:  /users/request
+    defaults: { _controller: BoilerplateArchitectureBundle:User:exempleRequest }
+    
+BoilerplateArchitectureBundle_users:
+    pattern:  /users
+    defaults: { _controller: BoilerplateArchitectureBundle:User:index }

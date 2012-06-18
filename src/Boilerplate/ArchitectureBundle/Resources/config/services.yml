@@ -2,6 +2,5 @@ parameters:
 #    boilerplate_architecture.example.class: Boilerplate\ArchitectureBundle\Example
 
 services:
-#    boilerplate_architecture.example:
-#        class: %boilerplate_architecture.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
+  boilerplate.architecture.response.provider.users:
+    alias: boilerplate.architecture.response.provider.users.file
